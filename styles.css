@@ -1,0 +1,67 @@
+body{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, main, aside, footer{
+    max-width: 485px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/*header*/
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #007d7b;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+/*navigation*/
+
+nav{
+    background-color: #000;
+}
+
+nav h2{
+    display: none;
+}
+
+nav li{
+    display: inline-flex;
+    list-style: none;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+[href="#top"]{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border: 2px solid #fff;
+    padding: 3px;
+}
