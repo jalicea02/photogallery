@@ -4,7 +4,7 @@ body{
 }
 
 header, nav, main, aside, footer{
-    max-width: 485px;
+    width: 485px;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -16,6 +16,7 @@ p{
 figcaption, label, input, small {
     font-size: 1em;
 }
+
 
 nav a {
     font-size: 1.5em;
@@ -51,17 +52,227 @@ nav li{
 }
 
 nav a{
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 10px;
+}
+
+nav a:hover{
+    color: #007d7b;
 }
 
 [href="#top"]{
+    background-color: #000;
     position: fixed;
     bottom: 0px;
     right: 0px;
     border: 2px solid #fff;
     padding: 3px;
+}
+
+[href="#top"]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*main content*/
+main{
+    padding: 10px;
+}
+main h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+main p{
+    text-align: left;
+}
+
+/*Gallery*/
+
+#Gallery div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#Gallery figure{
+    margin: 0 auto;
+}
+figcaption{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.whiteB figcaption{
+    position: relative;
+    bottom: 30px;
+    color: #fff;
+}
+
+.whiteT figcaption{
+    position: relative;
+    bottom: 270px;
+    color: #fff;
+}
+
+.blackB figcaption{
+    position: relative;
+    bottom: 30px;
+    color: #000;
+}
+
+.blackT figcaption{
+    position: relative;
+    bottom: 270px;
+    color: #000;
+}
+
+.blackTL figcaption{
+    position: relative;
+    bottom: 620px;
+    color: #000;
+}
+
+/*Contact Form*/
+#Contact{
+    background-color: #000;
+}
+
+#Contact h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#Contact p{
+    color: #fff;
+    text-align: center;
+}
+
+.form{
+    padding: 10px;
+}
+
+form h2{
+    display: none;
+}
+
+.form label{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form input{
+    padding: 10px;
+}
+
+input{
+    margin: 0 auto;
+    width: 95%;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    color: #007d7b;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit label{
+    display: none;
+}
+
+.submit input{
+    background-color: #007d7b;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 80px;
+    border-radius: 10px;
+    margin: 25px auto 50px;
+    width: 60%;
+}
+
+.submit input:hover{
+    background-color: rgb(2, 87, 85);
+    color: #d6d6d6;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer small{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*Responsive Adjustments*/
+
+@media screen and (min-width:800px){
+    header, nav, main, aside, footer{
+        width: 800px;
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    #Gallery div{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figure img{
+        width: 380px;
+    }
+
+    .whiteT figcaption{
+        bottom: 245px;
+    }
+
+    .blackT figcaption{
+        bottom: 245px;
+    }
+
+    .blackTL figcaption{
+        bottom: 550px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    header, nav, main, aside, footer{
+        width: 1300px;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    #Gallery div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure img{
+        width: auto;
+    }
+
+    .whiteT figcaption{
+        bottom: 275px;
+    }
+
+    .blackT figcaption{
+        bottom: 275px;
+    }
+
+    .blackTL figcaption{
+        bottom: 620px;
+    }
 }
